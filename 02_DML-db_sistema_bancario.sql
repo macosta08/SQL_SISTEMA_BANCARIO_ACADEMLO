@@ -61,11 +61,11 @@
 
 	-- actualizaciones de las referencias por al transferencia realizada
 	UPDATE public."Transactions"
-	SET "REFERENCE"=1422 
-	WHERE "ID"=1423;
+	SET "REFERENCE"=1421 
+	WHERE "ID"=1420;
 	UPDATE public."Transactions"
-	SET "REFERENCE"=1423 
-	WHERE "ID"=1422;
+	SET "REFERENCE"=1420 
+	WHERE "ID"=1421;
  
 
 	--salida de transferencia de efectivo de Jonh Doe a Hector Hernandez
@@ -84,7 +84,15 @@
 	--ACTUALIZANDO EL SALDO
 	UPDATE public."Accounts"
 	SET "ACCOUNT_BALANCE"="ACCOUNT_BALANCE" + 10000
-	WHERE "ID"=111;
+	WHERE "ID"=111;	
+
+	-- actualizaciones de las referencias por al transferencia realizada
+	UPDATE public."Transactions"
+	SET "REFERENCE"=1423 
+	WHERE "ID"=1422;
+	UPDATE public."Transactions"
+	SET "REFERENCE"=1422 
+	WHERE "ID"=1423;
 
 --- 2 de tipo **pago de tarjeta de crédito** con un monto de $7500 para la cuenta de Andrea Alvarez, una con un monto de $5000 para la cuenta de Jonh Doe.
 
